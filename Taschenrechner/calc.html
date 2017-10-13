@@ -1,0 +1,45 @@
+ <html>
+  <head>
+  <title>Taschenrechner</title>
+  <script>
+  
+	var a,b,result;
+	function setValues(){
+		a = Number(document.getElementById("a").value);
+		b = Number(document.getElementById("b").value);
+	}
+	function add(){
+		setValues();
+		result= a+b;
+		alert("Die Summe beträgt"+ " " + result);
+	}
+	function sub(){
+		setValues();
+		result= a-b;
+		alert("Die Summe beträgt"+ " " + result);
+	}
+	function mult(){
+		setValues();
+		result= a*b;
+		alert("Die Summe beträgt"+ " " + result);
+	}
+	function divi(){
+		setValues();
+		result= a/b;
+		alert("Die Summe beträgt"+ " " + result);
+	}
+	
+  </script>
+  </head>
+  <body bgcolor=#CCCCCC text=#000000 link=#0000CC vlink=#000099 alink=#0000FF>
+  <h1>Taschenrechner</h1>
+  <div>
+	<input id="a" type="text">
+	<input id="b" type="text">
+	<input value="+" onclick="add()" type="button">
+	<input value="-" onclick="sub()" type="button">
+	<input value="*" onclick="mult()" type="button">
+	<input value="/" onclick="divi()" type="button">
+  </div>
+  </body>
+  </html>
